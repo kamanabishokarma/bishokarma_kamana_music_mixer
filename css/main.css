@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(45deg, #9affb3, #db5a37, #52b9f4 );
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+    
+    
+    
+    
+/* Hide the h1 visually but keep it accessible for screen readers */
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Styling the container */
+#container {
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+    margin-top: 200px;
+}
+
+/* Styling the grid for the image container */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust size as needed */
+    grid-gap: 10px; /* Adjust gap between images */
+}
+
+/* Styling the tape image */
+.draggable {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 14px 15px rgba(0, 0, 0, 0.2); /* Add drop shadow */
+}
+
+/* Styling the drop zones */
+.dropZones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropZone {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border: 2px dashed #000000;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Media queries for tablet and mobile sizes */
+@media only screen and (max-width: 768px) {
+    .dropZone {
+        width: 120px; /* Adjust size for tablet */
+        height: 120px; /* Adjust size for tablet */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .dropZone {
+        width: 100px; /* Adjust size for mobile */
+        height: 100px; /* Adjust size for mobile */
+    }
+}
