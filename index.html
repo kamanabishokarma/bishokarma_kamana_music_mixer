@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Drag and Drop Example with audio</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+    <h1 class="hidden">Audio Drag and Drop Example</h1>
+    <h1 class="hidden">Audio Drag and Drop Example</h1>
+
+    <div id="container">
+        <div class="image-container">
+            <img data-trackref="audio/tape.mp3" src="images/tape.jpeg" alt="tape" class="draggable" draggable="true">
+
+            <img data-trackref="audio/tape.mp3" src="images/background.jpeg" alt="background" class="draggable" draggable="true">
+
+            <img data-trackref="audio/music_player.mp3" src="images/music_player.jpeg" alt="music player" class="draggable" draggable="true">
+
+            <img data-trackref="audio/vinyl.mp3" src="images/Vinyl_Sticker.jpeg" alt="vinyl sticker" class="draggable" draggable="true">
+
+            <img data-trackref="audio/guitar.mp3" src="images/guitar.jpeg" alt="guitar" class="draggable" draggable="true">
+        </div>
+
+        <div class="dropZones">
+            <div class="dropZone" id="drop-target-1"></div>
+            <div class="dropZone" id="drop-target-2"></div>
+            <div class="dropZone" id="drop-target-3"></div>
+            <div class="dropZone" id="drop-target-4"></div>
+            <div class="dropZone" id="drop-target-5"></div>
+        </div>
+    </div>
+
+    <audio id="audio"></audio>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
